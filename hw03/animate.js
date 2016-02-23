@@ -10,7 +10,7 @@ hw.innerHTML = "HW02 -- Animate!";
 var date = document.getElementById("date");
 date.innerHTML = "2016-02-22";
 
-/* ------------- DOT CONNECTION ------------- */
+/* ------------- CIRCLE ------------- */
 // Gets the element with an id of playground and assigns to canvas
 var canvas = document.getElementById("playground");
 // Using 2d context
@@ -45,14 +45,35 @@ var stopCircle = function(){
     window.cancelAnimationFrame(requestID);
 };
 
+
+/* ------------------ DVD ------------------ */
 var logo = new Image();
-logo.src = "";
+logo.src = "logo_dvd.jpg";
+
+var x = width/2;
+var y = height/2;
+var down = true;
+var right = false;
 
 var startDVD = function(){
     ctx.clearRect(0,0,width,height);
-    var logo
+    ctx.drawImage(logo,x,y,100,100);
+    if (x == 0 || x + 100 == width)
+	right = !right;
+    if (y == 0 || y + 100 == height)
+	down = !down;
+    if (right)
+	x = x+1;
+    else
+	x = x-1;
+    if (down)
+	y = y+1;
+    else
+	y = y-1;
+    requestID = window.requestAnimationFrame(startDVD);
 };
 
+/* ------------------ BUTTONS ------------------ */
 var circleButton = document.getElementById("circle");
 circleButton.addEventListener( "click", drawCircle );
 
