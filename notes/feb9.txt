@@ -1,0 +1,35 @@
+Aim: Canvassing the nabe (neighborhood) with DOM and HTML5
+DoNow: What did advent of DOM achieve? What did it NOT achieve?
+- a kind of standard (consistency) for web designers to follow
+- it attempted to have websites render the same way / properly in diff browsers
+
+BUT -> it did NOT accomodate multimedia aspects
+
+Web v1.0
+- when was this ?? they kinda skipped over this
+- static
+- consume as a user
+
+Web v2.0
+- when this was announced -> "what happened to 1.0??"
+- dynamic
+- post content (like Facebook)
+- interct with others
+
+MULTIMEDIA was annoying
+- if you wanted to use like Flash you would have to install it on each browser
+- a lot of plugins
+
+Why NOT Flash on iOS?
+- a lot of CPU usage that could eat the battery of your portable device in 10mins
+- Flash is CLOSED source - danger of bad coders
+- herpderp goodbye Flash
+
+PAIR PROGRAMMING
+- 1 keyboarder
+- 1 co-driver
+- 2 thinkers
+
+HTML5
+- canvases!!!
+  - height, width, id

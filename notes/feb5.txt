@@ -1,0 +1,58 @@
+AIM: Canvassing the nabe with DOM and HTML5
+DoNow: Engage your imagination, and put thoughts to paper...
+       The year is 1995.
+       You are a HS senior.
+       <no idea>
+       
+       a) What are you wearing?
+       	  clothes
+	  baggy jeans
+	  neon
+	  timberland boots
+	  flannel
+
+       b) What does your CD collection look like?
+       	  Britney Spears
+	  Nirvana
+	  No Doubt
+	  Backstreet Boys
+	  N-Sync
+
+       c) What is the state of the Internet?
+       	  what's that?
+	  16000 users?
+	  9 million posts?
+	  23,000 sites?
+
+       d) What does your webpage look like?
+       	  56 kb dial-up connection
+	  first Broadband connection is like 1 mb
+
+	  marquees
+	  no css
+	  blocky
+	  text-heavy
+	  "intro to cs2"-y hw assignment
+
+Beef in the '90s
+     Browsers
+	Netscape vs IE
+     Netscape -> JavaScript
+     IE -> JScript
+     
+     Enter the DOM
+     	   W3C forms, introduces the
+	   Document Object Model
+	   	    - orgaizes components of a webpage as a tree
+		    - provides API for languages like JS to access pg elements
+
+		    DOCUMENT
+		
+		      HTML
+
+	      HEAD		BODY
+
+	      TITLE	     H1       P
+	      
+	      "McKay"	   "cabeza"   "paratrooper"
+			

@@ -1,0 +1,18 @@
+Aim: Mawr JS on teh CAMVAS! MWRPP!!!
+
+HW Server
+- Login
+- Update profile
+- Change pass
+  - Close brrowser, reopen, test
+- Upload
+  - index.html
+  - canvas.js
+  in separate slots
+
+INDEX.HTML
+- Canvas w/ id = "ftb2maga"
+  DIM: 538 x 538 px
+
+CANVAS.JS
+- 
