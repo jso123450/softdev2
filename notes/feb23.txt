@@ -1,5 +1,7 @@
 Aim:
 
-var requestID
+var requestID;
+
+in drawCircle function, use requestID = window.requestAnimationFrame(<fxn>)
 
 window.cancelAnimationFrame(requestID)
