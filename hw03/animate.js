@@ -5,10 +5,10 @@ console.log("Ready for some dotconn'ing!");
 
 /*--------------- HEADING ---------------*/
 var hw = document.getElementById("hw");
-hw.innerHTML = "HW02 -- Animate!";
+hw.innerHTML = "HW03 -- Animate!";
 
 var date = document.getElementById("date");
-date.innerHTML = "2016-02-22";
+date.innerHTML = "2016-02-23";
 
 /* ------------- CIRCLE ------------- */
 // Gets the element with an id of playground and assigns to canvas
