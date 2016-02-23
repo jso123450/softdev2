@@ -45,8 +45,19 @@ var stopCircle = function(){
     window.cancelAnimationFrame(requestID);
 };
 
+var logo = new Image();
+logo.src = "";
+
+var startDVD = function(){
+    ctx.clearRect(0,0,width,height);
+    var logo
+};
+
 var circleButton = document.getElementById("circle");
 circleButton.addEventListener( "click", drawCircle );
 
 var stopButton = document.getElementById("stop");
 stopButton.addEventListener("click", stopCircle );
+
+var dvdButton = document.getElementById("dvd");
+dvdButton.addEventListener("click", startDVD );

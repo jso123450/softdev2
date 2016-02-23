@@ -5,3 +5,7 @@ var requestID;
 in drawCircle function, use requestID = window.requestAnimationFrame(<fxn>)
 
 window.cancelAnimationFrame(requestID)
+
+var logo = new Image();
+logo.src = "filename";
+ctx.drawImage(logo,x,y,w,h);
