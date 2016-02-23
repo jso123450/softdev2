@@ -1,0 +1,25 @@
+Aim:
+
+Setting up Submods
+1. Make new GitHub repo for SoftDev hw
+
+2. Clone main repo
+$ git clone git@github.com:stuy-softdev/workshop.git
+
+3. Navigate to your period's directory, and...
+$ git submodule add <HTTPS LINK> <first_last>
+
+4. Commit and push to main repo
+$ git pull; git commit -a -m "<COMMIT MSG>"; git push
+
+5. Remove workshop 
+$ rm -rf workshop
+
+window.requestAnimationFrame(<fxn>)
+
+* Tells browser to run specified fxn before drawing next frame
+* Allows browser to handle when code should be executed
+(as opposed to setInterval which is based on specific times)
+* Allows browser to pause animation when a page is not in foreground
+* Fxn must call requestAnimationFrame() to animate another frame at next repaint
+Browser will attempt to run 60 fps
