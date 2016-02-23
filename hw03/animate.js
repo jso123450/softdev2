@@ -50,8 +50,8 @@ var stopCircle = function(){
 var logo = new Image();
 logo.src = "logo_dvd.jpg";
 
-var x = width/2;
-var y = height/2;
+var x = 100;
+var y = 237;
 var down = true;
 var right = false;
 
