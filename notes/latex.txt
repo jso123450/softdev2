@@ -1,0 +1,11 @@
+LaTeX
+
+
+Required
+	Basic LaTeX - Jason
+	Graphics - Kevin
+	Fun/Random Packages - Johnny
+
+Extra Stuff
+      Using Functions
+      
