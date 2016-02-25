@@ -67,8 +67,9 @@ var stop = function(){
 // - INSTEAD it spawns MULTIPLE occurrences of dvd logos, each with their OWN
 //   variables (x,y,down,right) and STOP correctly stops the right dvd
 var dvdLogoSetup = function(e){
-    stop;
-    
+    window.cancelAnimationFrame(requestID);
+    //ctx.clearRect(0,0,538,538);
+
     // setting up the logo
     var logo = new Image();
     logo.src = "logo_dvd.jpg";
@@ -81,7 +82,6 @@ var dvdLogoSetup = function(e){
     
     // making the dvd move; not used anywhere else
     var dvdLogo = function(){
-	clear;
 	ctx.drawImage(logo,x,y,100,100);
 	
 	// propulsion
