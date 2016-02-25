@@ -1,0 +1,16 @@
+Aim: What's yer Vector Victor?
+DoNow: Sit with your team. Do not login yet.
+
+Presentations begin Monday
+- 10-15 min
+- beginning of class
+
+XML (eXtensible Markup Language)
+- a markup language that defines a set of rules for encoding documents in a
+  format which is both human-readable and machine-readable
+- NOT a formatting language (like HTML)
+- framework for creating markup based grammars
+- uses some syntactic standards of HTML (tags, attributes)
+- focus on sorting and representing data instead of rendering displaying it
+- an XML namespace is defined by the tags and attributes associated with a
+  specific XML language
