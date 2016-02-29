@@ -11,6 +11,37 @@ XML (eXtensible Markup Language)
 - NOT a formatting language (like HTML)
 - framework for creating markup based grammars
 - uses some syntactic standards of HTML (tags, attributes)
-- focus on sorting and representing data instead of rendering displaying it
+- focus on sorting and representing data instead of rendering & displaying it
 - an XML namespace is defined by the tags and attributes associated with a
   specific XML language
+
+...like SVG (Scalabe Vector Graphics)
+- vector image format
+- XML-based
+- an SVG img and its actions are defined in XML text files
+
+Vector graphs are images that are not represented as a 2d graph of pixels
+(raster) but instead as a list of drawing commands (like line, curve, rect, etc)
+
+Biggest advantage to vector graphics is that they are scalable to ANY size
+WITHOUT resulting in pixelation.
+
+the <svg> element is designed to store SVG code (XML elements)
+    <svg xmlns="http://www.w3.org/2000/svg">
+    	 SVG CODE HERE
+    </svg>
+
+    xmlns
+	Attribute that identifies the namespace for the specific XML being used  
+
+Creating SVG elements in JavaScript
+- document.createElementNS( <NAMESPACE IDENTIFIER>, <ELEMENT>);
+- creates an element from a specified XML namespace
+- ex:
+	var c1 = document.createElementNS("http://www.w3.org/2000/svg","circle");
+- once created, you can modify it with setAttribute calls
+       c1.setAttribute("cx","200");
+
+To add the element to your svg container, use the appendChild function
+   var pic = document.getElementById("svgid");
+   pic.appendChild(c1);
