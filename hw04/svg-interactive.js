@@ -88,25 +88,28 @@ growButton.addEventListener( "click" , grow );
 var movingDVD = function moveDVD(){
 
     // init
-    var dvd = document.createElementNS( svgNSID, "circle" );
+    
+    var dvd = document.createElementNS( svgNSID, "image" );
+    dvd.setAttribute( "xlink", "http://www.w3.org/1999/xlink");
+    dvd.setAttribute( "xlink:href", "logo_dvd.jpg" );
     var x = 250;
     var y = 250;
-    dvd.setAttribute( "cx" , x );
-    dvd.setAttribute( "cy" , y );
-    dvd.setAttribute( "fill", "red" );
-    dvd.setAttribute( "r" , 50);
+    dvd.setAttribute( "x", x );
+    dvd.setAttribute( "y", y );
+    dvd.setAttribute( "width" , 100 );
+    dvd.setAttribute( "height" , 75 );
     var v_x = 1;
     var v_y = -2;
     
     var animateCode = function(){
-	if ((dvd.getAttribute("cx") >= 450) || (dvd.getAttribute("cx") <= 50))
+	if ((dvd.getAttribute("x") >= 400) || (dvd.getAttribute("x") <= 100))
 	    v_x = v_x * -1;
-	if ((dvd.getAttribute("cy") >= 450) || (dvd.getAttribute("cy") <= 50))
+	if ((dvd.getAttribute("y") >= 400) || (dvd.getAttribute("y") <= 100))
 	    v_y = v_y * -1;
 	x = x + v_x;
 	y = y + v_y;
-	dvd.setAttribute( "cx", x );
-	dvd.setAttribute( "cy", y );
+	dvd.setAttribute( "x", x );
+	dvd.setAttribute( "y", y );
 	pic.appendChild(dvd);
     }
     intervalID = window.setInterval( animateCode, 16 );
