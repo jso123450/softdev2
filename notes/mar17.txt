@@ -1,0 +1,29 @@
+Seletors
+
+Like JQuery, you can select DOM elems using d3 functions
+
+d3.select( <IDENTIFIER> );
+    - Returns the irst element that matches the given identifier
+
+d3.selectAll( <IDENTIFIER> );
+    - Returns an array of all the elements that match the given identifier
+
+So why D3?
+    - After selecting an element, you can set various attributes
+      like style, text, listeners, ....
+    - ex.
+      d3.select("body").style("color","red");
+
+    - AND also pass functions to set the values dynamically
+
+      d3.selectAll("p").style("font-size", function(){
+      				return Math.floor(Math.random()*15)+"px"});
+
+var data = [4,8,15,16,23,42];
+var graph = d3.select(".graph");
+var bar = chart.selectAll("div");
+var barUpdate = bar.data(data);
+var barEnter = barUpdate.enter().append("div");
+barEnter.style("width", function(d){
+			return d * 10 + "px"; });
+barEnter.text(function(d) {return d;});
