@@ -1,4 +1,4 @@
-Seletors
+Selectors
 
 Like JQuery, you can select DOM elems using d3 functions
 
