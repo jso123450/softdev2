@@ -3,7 +3,7 @@
 <html>
   
   <head>
-    <title> HW06 </title>
+    <title> HW05 </title>
     <link rel="stylesheet" href="css/style.css"></style>
     <h1 id="name"> Johnny So </h1>
     <h2 id="class"> SoftDev2 Pd6 </h2>
@@ -14,7 +14,7 @@
 
   <body>
 
-    <h1 id="graphTitle" align="center"> Democratic Delegates Per State </h1>
+    <h1 align="center"> Democratic Delegates Per State </h1>
 
     <h2 align="center"> Key </h2>
     <div class="key">
