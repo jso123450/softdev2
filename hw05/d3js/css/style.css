@@ -1,0 +1,19 @@
+.primaries div{
+    font: 13px arial;
+    background-color: lightgreen;
+    text-align: right;
+    padding: 7px;
+    margin: 1px;
+    color: black;
+    white-space: nowrap;
+}
+
+.key div{
+    font: 13px verdana;
+    background-color: lightgreen;
+    text-align: right;
+    padding: 7px;
+    margin: 1px;
+    color: black;
+    white-space: nowrap;
+}
