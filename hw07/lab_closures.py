@@ -48,4 +48,5 @@ r2 = repeat('goodbye')
 
 print r1(2) # -> hellohello
 print r2(2) # -> goodbyegoodbye
+print repeat('cool') # -> should return location of times
 print repeat('cool')(3) # -> coolcoolcool
