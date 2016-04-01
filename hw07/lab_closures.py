@@ -1,8 +1,9 @@
+# location == memory location/address
+
 def inc(x):
     return x + 1
 
 f = inc
-
 print f(10)
 
 def h(x):
@@ -16,8 +17,10 @@ print h(2)(5)
 # if y is defined, then it just evaluates the function lambda at that y
 
 b = h(1) # the same as h(1) & h(2), so they're also closures
-
 print b
+
+c = h(1)(3)
+print c
 
 def f(x):
     def g(y):
