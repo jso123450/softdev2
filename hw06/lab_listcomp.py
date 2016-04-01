@@ -56,13 +56,11 @@ def passStrength(password):
     #     a number = +1
     #     every nonalpha char = +1
     # NO UPPER LIMIT.
-    pwStrength+= len(password)/3
+    pwStrength+= len(password)/5
     list_comp = [ 1 if x in CAPS_LETTERS else 0 or 2 if x in LOWER_LETTERS 
                   else 0 or 3 if x in NUMBERS else 0 or 4 if x in NONALPHA
                   else 0 for x in password ] 
-    if (1 in list_comp):
-        pwStrength+= 1
-    if (2 in list_comp):
+    if ((1 in list_comp) and (2 in list_comp)):
         pwStrength+= 1
     if (3 in list_comp):
         pwStrength+= 1
