@@ -1,0 +1,9 @@
+Closure?
+
+def f(x):
+    def g(y):
+    	return x + y
+    return g
+
+a = f(1)
+print a(3)		
