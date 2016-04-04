@@ -6,4 +6,22 @@ def f(x):
     return g
 
 a = f(1)
-print a(3)		
+print a(3)
+
+When it runs a = f(1) it's a closure
+
+
+Closures
+1. A function is declared inside another function.
+2. Inner function accesses a variable from the outer function
+   (outside of the local scope of the inner function)
+3. The external function binds a value to the variabl and finishes (or closes)
+   before the inner function can be compleed
+
+   def repeat(s):
+       def times(x):
+       	   return s * x
+       return times
+
+This is an example of a nested function, but NOT a closure because s,
+the external variable to times, is not bound to any variable.			

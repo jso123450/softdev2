@@ -16,10 +16,10 @@ print h(2)(5)
 # the ones without y defined all return where lambda y: x + y is
 # if y is defined, then it just evaluates the function lambda at that y
 
-b = h(1) # the same as h(1) & h(2), so they're also closures
+b = h(1) # a closure
 print b
 
-c = h(1)(3)
+c = h(1)(3) # another closure
 print c
 
 def f(x):
@@ -32,7 +32,7 @@ print f(1) # location of where the function g, x+y is stored
 print f(2)
 print f(1)(2) # since y is defined, it evaluates g at the givens
 
-a = f(1) # also a closure, in the same manner as b
+a = f(1) # a closure
 
 # TASK: 
 #     Write a closure with outer function named 'repeat'
