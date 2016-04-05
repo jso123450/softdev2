@@ -1,0 +1,5 @@
+Aim: Decoration Day
+DoNow: In a new .py file, define the following fxns. Predict the output of
+       fist[1](5) before running....
+
+Simulate a class definition using inner functions
