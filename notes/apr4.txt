@@ -25,3 +25,10 @@ Closures
 
 This is an example of a nested function, but NOT a closure because s,
 the external variable to times, is not bound to any variable.			
+
+    r1 = repeat("hello")
+
+This creates a closure because repeat runs, binds s to "hello", and then
+exits, returning a function (times) with s bound to "hello"
+
+   r1(2)
