@@ -3,3 +3,12 @@ DoNow: In a new .py file, define the following fxns. Predict the output of
        fist[1](5) before running....
 
 Simulate a class definition using inner functions
+
+You can write fxnx that transform fxns.
+
+A Python decorator is shorthand for calling a wrapper-type
+  function (like doubler).
+
+A Python decorator encapsulates a closure.
+
+A Python decorator allows you to transparently wrap functionality.
