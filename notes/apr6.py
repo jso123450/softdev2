@@ -48,5 +48,4 @@ print pt2(15) # -> [[3,4,5],[5,12,13],[6,8,10]]
 #       c) PIVOT is in the right spot
 #   3) QS LH and RH
 
-#def pt3(n):
     
