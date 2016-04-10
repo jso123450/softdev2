@@ -1,5 +1,4 @@
 import time
-import random
 
 def wrapper(f):
     def inner(*arg):
@@ -30,31 +29,19 @@ print helloHTML #-> "<b><i>hello world</i></b>"
 
 
 # HW09
-def funcName(f):
-    return lambda: f.func_name
-
 def funcArgs(f):
     return lambda *arg: f(*arg)
 
 def funcTime(f):
-    return lambda: time.time()
+    start = time.time()
+    return lambda *arg: f(*arg) + "\n" + str(time.time() - start)
 
-def allInOne(s):
-    @funcTime
-    def startTime():
-        return "a"
-    @funcName
-    def johnny():
-        return "b"
-    i = 0
-    while (i < 1000000):
-        i+= 1
-    @funcArgs
-    def jason(s):
-        return s
-    @funcTime
-    def endTime():
-        return "c"
-    return str(johnny()) + jason(s) + " and it took " + str(endTime() - startTime()) + " seconds to run"
+@funcArgs
+@funcTime
+def bothInOne(s):
+    for x in range(10):
+        for y in range(25):
+            a = x+y
+    return "jooni" + s
 
-print allInOne(" is so cool")
+print bothInOne(" is so cool")
