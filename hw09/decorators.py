@@ -36,7 +36,7 @@ def funcArgs(f):
 
 def funcTime(f):
     start = time.time()
-    return lambda *arg: f(*arg) + "\n" + str(time.time() - start)
+    return lambda *arg: f(*arg) + "\n execution time: " + str(time.time() - start)
 
 @funcArgs
 @funcTime
