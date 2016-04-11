@@ -1,4 +1,6 @@
 import time
+import quicksort
+import random
 
 def wrapper(f):
     def inner(*arg):
@@ -45,3 +47,14 @@ def bothInOne(s):
     return "jooni" + s
 
 print bothInOne(" is so cool")
+
+@funcTime
+def timeQSort(l):
+    newList = quicksort.quickSort(l)
+    return str(newList)
+
+randomList = []
+for i in range(500000):
+    randomList.append(random.randrange(5000000))
+
+print timeQSort(randomList)
