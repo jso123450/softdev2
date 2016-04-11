@@ -19,7 +19,7 @@ def quickSort(l):
     #            ......
     lower = quickSort([x for x in l[1:] if x < pivot])
     upper = quickSort([x for x in l[1:] if x >= pivot])
-    return lower + ([pivot]*l.count(pivot)) + upper
+    return lower + [pivot] + upper
 
 print quickSort([5,2,7,1,9,13]) # -> [1,2,5,7,9,13]
 print quickSort([8,31,23,96]) # -> [8,23,31,96]
