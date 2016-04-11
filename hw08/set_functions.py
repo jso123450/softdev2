@@ -19,7 +19,7 @@ def quickSort(l):
     #            ......
     lower = quickSort([x for x in l[1:] if x < pivot])
     upper = quickSort([x for x in l[1:] if x >= pivot])
-    return lower + [pivot] + upper
+    return lower + ([pivot]*l.count(pivot)) + upper
 
 # Union of Two Sets
 def union(a,b):
