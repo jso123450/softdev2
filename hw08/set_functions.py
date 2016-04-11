@@ -1,3 +1,4 @@
+import random
 
 # QuickSort
 def quickSort(l):
@@ -6,7 +7,7 @@ def quickSort(l):
         return l
 
     # Step 1 : Select a PIVOT (easiest is just first elem)
-    pivot = l[0]
+    pivot = L[0]
 
     # Step 2 : PARTITION your list such that
     #         a) all values < your PIVOT is on one side
