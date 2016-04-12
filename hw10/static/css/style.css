@@ -1,0 +1,76 @@
+/* index background styling */
+.jumbotron {
+    position: fixed;
+    background: linear-gradient( rgba(0,0,0,0.8), rgba(0,0,0,0.8) ), #000 url("../foodpic.jpg") center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#bg-center{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+    background: rgb(120,181,191);
+}
+
+#bg-right {
+  background-color: rgb(0,0,0);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  z-index: -1;
+}
+
+#down10{
+    margin-top:10%;
+}
+#down3{
+    margin-top:3%;
+}
+#down7{
+    margin-top:7%;
+}
+
+/* main heading styling */
+.type{
+    margin-top: 7%;
+    color: rgb(255,255,255);
+    font-family: 'Lobster', cursive;
+    font-size: 300%;
+}
+
+/* search bars and other options styling */
+.type2{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: rgb(255,255,255);
+    font-size: 150%;
+}
+
+#container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#container div:first-child {
+    border-left: 0;
+}
+
+#container div:last-child {
+    border-right: 0;
+}
+
+hr { 
+    margin-left: 30%;
+    margin-right: 30%;
+} 
+
+.btn-invis{
+    background: transparent;
+    border: none !important;
+}​
