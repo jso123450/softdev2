@@ -1,6 +1,8 @@
 from flask import Flask, render_template, session, request, url_for, redirect, Markup
 import yelp, google, diagnostics
 
+# diagnostics contains something to check the runtime of a function
+
 app = Flask(__name__)
 
 # index
